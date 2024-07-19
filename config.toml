@@ -1,3 +1,36 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'dalexander'
+theme = "cactus"
+description = "Because every hacker needs a website"
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "Writngs"
+url = "/posts"
+weight = 2
+[[menu.main]]
+name = "Photography"
+url = "/photos"
+weight = 3
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4
+[params]
+  colortheme = "dark" # dark, light, white, or classic
+  rss = true # generate rss feed. default value is false
